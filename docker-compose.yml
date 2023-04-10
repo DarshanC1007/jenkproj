@@ -2,4 +2,4 @@ version: '3'
 
 services:
   public:
-    image: dash1007/jenkproj
+    image: dash1007/jenkproj:v1
