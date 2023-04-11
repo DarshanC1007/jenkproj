@@ -1,15 +1,12 @@
-version: '3.8'
-
 services:
-
   sample:
     container_name: sample
     build:
       context: .
       dockerfile: Dockerfile
-      image: jenkproj
     volumes:
       - '.:/app'
       - '/app/node_modules'
     ports:
       - 3001:3000
+    image: jenkproj
