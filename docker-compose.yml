@@ -1,9 +1,9 @@
 version: '3.7'
 services:
   frontend:
-    build: https://github.com/DarshanC1007/jenkproj.git
+    build:
+      context: ./dir
     image: jenkproj:latest
     container_name: jenkcont
     ports:
       - "3001:3000"
-   
