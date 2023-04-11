@@ -8,4 +8,4 @@ services:
       dockerfile: Dockerfile
     ports:
       - 3001:3000
-    image: jenkproj
+    image: jenkproj:26df24238509310b699c1e9888f262948fa59f1dbd5c63596051c177863a7c81
