@@ -1,5 +1,14 @@
-version: '3'
+version: '3.7'
 
 services:
-  private:
-    image: dash1007/jenkproj:v1
+
+  sample:
+    container_name: sample
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 3001:3000
